@@ -26,6 +26,13 @@ metadata:
   title: Evergreen Backend
   description: Evergreen backend service
   annotations:
+    product/name: Evergreen
+    product/type: "Internal: Owned by R&D"
+    product/default-engineering-contact: user:annie.black
+    product/is-deprecated: No
+    security/in-scope-dast: TBD
+    security/assessed-since-2024-09: Yes
+    github.com/project-slug: evergreen-ci/evergreen
     evergreen/project-id: evergreen
     cloud-query/aws_accounts: "557821124784,058264131563"
     cloud-query/bucket_arns: "arn:aws:s3:::mciuploads,arn:aws:s3:::mci-uploads-storage-audit"
@@ -41,6 +48,7 @@ metadata:
       icon: dashboard
 spec:
   type: service
+  ctoDirect: user:caitlyn.shim
   owner: group:10gen-evergreen-team
   lifecycle: production
   system: evergreen
